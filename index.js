@@ -1,47 +1,47 @@
-//function alumnos(){
- //    for (let alumnos = 1; alumnos < 11; alumnos++){
- //         estudiantes = prompt("Buenas maestro, ingrese el nombre del alumno.");
- //         nota = parseInt(prompt("Ahora ingrese las notas de cada alumno para ver si aprobo o desaprobo."));
-//
-//          console.log(estudiantes+" se saco un "+nota);
-//          if (nota >= 7 && nota <= 10){
-//               console.log("Este estudiante ha aprobado");
-//          }
-//         else if (nota < 7){
-//               console.log("Este estudiante ha desaprobado");
-//          }
-//          else if (nota > 10){
-//               console.log("la nota maximo de nota es un "+ 10);
-//          }
-//     }
-//}
-//alumnos()
-// CALCULADORA
+let materias = ["lengua", "matematicas"]
+materias.push('ingles')
 
+class alumno{
+     constructor(nombre, edad){
+          this.nombre = nombre;
+          this.edad = edad;
+     }
+}
+const alumno1 = new alumno ("Lautaro", 17)
+const alumno2 = new alumno ("Emanuel", 16)
+const alumno3 = new alumno ("Sebastian", 18)
 
-//const resta = (a, b) => a - b;
+console.log("El alumno es "+ alumno1.nombre + " y de "+ alumno1.edad + " años");
 
-//const divison = (a, b) => a / b;
-
-//const multiplicacion = (a, b) => a * b;
-
-//const iva = (a) => a * 0.21;
-
-//console.log(resta(5, 2));
-
-
-let materias = ["lengua", "matematicas", "ingles", "quimica", "informatica"]
-materias.push('gimnasia')
-
-
-console.log(("estas son las matertias " + materias.join(" - ")))
+console.log(("estas son las materias " + materias.join(" - ")))
 function alumnos(){
      for (let alumnos = 1; alumnos < 4; alumnos++){
-          estudiantes = prompt("Buenas maestro, ingrese el nombre del alumno.");
-          materias = prompt("Ahora ingrese la materia")
-          nota = parseInt(prompt("Ahora ingrese las notas de cada alumno para ver si aprobo o desaprobo."));
+          materias = prompt("Ingrese la materia")
+          nota = parseInt(prompt("Ahora ingrese la nota de este alumno"));
+          console.log(" se saco un "+nota+" en "+ materias);
+          if (nota >= 7 && nota <= 10){
+               console.log("Este estudiante ha aprobado "+ materias);
+          }
+         else if (nota < 7){
+               console.log("Este estudiante ha desaprobado "+ materias);
+          }
+          else if (nota > 10){
+               console.log("la nota maximo de nota es un "+ 10);
+         }
+     }
+}
 
-          console.log(estudiantes+" se saco un "+nota+" en "+ materias);
+alumnos()
+
+
+console.log("El alumno es "+ alumno2.nombre + " y de "+ alumno2.edad + " años");
+
+function alumnos(){
+     for (let alumnos = 1; alumnos < 4; alumnos++){
+          materias = prompt("Ingrese la materia")
+          nota = parseInt(prompt("Ahora ingrese la nota de este alumno"));
+
+          console.log(" se saco un "+nota+" en "+ materias);
           if (nota >= 7 && nota <= 10){
                console.log("Este estudiante ha aprobado "+ materias);
           }
@@ -54,3 +54,25 @@ function alumnos(){
      }
 }
 alumnos()
+
+console.log("El alumno es "+ alumno3.nombre + " y de "+ alumno3.edad + " años");
+
+function alumnos(){
+     for (let alumnos = 1; alumnos < 4; alumnos++){
+          materias = prompt("Ingrese la materia")
+          nota = parseInt(prompt("Ahora ingrese la nota de este alumno"));
+
+          console.log(" se saco un "+nota+" en "+ materias);
+          if (nota >= 7 && nota <= 10){
+               console.log("Este estudiante ha aprobado "+ materias);
+          }
+         else if (nota < 7){
+               console.log("Este estudiante ha desaprobado "+ materias);
+          }
+          else if (nota > 10){
+               console.log("la nota maximo de nota es un "+ 10);
+         }
+     }
+}
+alumnos()
+
