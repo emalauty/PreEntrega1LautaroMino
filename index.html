@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
     <title>Curso JS</title>
 </head>
 <body>
-    <script src="index.js"></script>
+    <div class="contenedor2">
+        <button class="botonBlanco" type="button" id="blanco">Iluminado</button>
+        <button class="botonNegro" type="button" id="negro">Oscuro</button>
+    </div>
+    <div id="container1" class="contenedor1">
+        
+        <h1 class="text1" id="texth1">¡Buenas profe ingrese su nombre!</h1>
+        <input id="nombreProfe" class="name" name="nombre" placeholder="Ingrese su nombre" type="text" required>
+        <button id="botonPrincipal" class="btn" type="button" >Enviar</button>
+        <label class="labelNombre"> Nombre del alumno
+            <input id="nombre" class="nameAlumno" name="nombre" placeholder="Ingrese su nombre" type="text" required>
+        </label>
+        <label class="labelNombre"> Total de materias aprobadas
+            <input id="materias" class="nameAlumno" name="nombre" placeholder="Ingrese su nombre" type="number" required>
+        </label>
+        <label class="labelNombre"> Numero de legajo
+            <input id="nombre" class="nameAlumno" name="nombre" placeholder="Ingrese su nombre" type="text" required>
+        </label>
+    </div>
+
+    <script src="index.js" type="module"></script>
 </body>
 </html>
